@@ -15,12 +15,12 @@ Path-Explorer is a new suite of user-friendly computational tools that enable re
 
 ## Installation
 
-"""
-git clone https://github.com/haoqiusong/Path-Explorer.git
+```
+git clone ht<span>tp://</span>https://github.com/haoqiusong/Path-Explorer.git
 cd read-pipeline
 bash install.sh
 conda env create -f environment.yml
-"""
+```
 
 ## (A). Read mapping to quantify pathogen and ARG markers of interest
 
