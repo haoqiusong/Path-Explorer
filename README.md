@@ -41,6 +41,25 @@ rm k2_standard_16gb_20240112.tar.gz
 
 ## (B). De novo assembly to assess potential new pathogen variants and to determine “resistome risk” (i.e., degree to which ARGs have propensity to spread to pathogens)
 
+```
+scp install.sh de_novo_assembly_and_resistome_risk
+cd de_novo_assembly_and_resistome_risk
+bash install.sh
+```
+
+### Download the compressed Blast Database file from Zenodo (25 GB) to run MetaCompare and uncompress it
+
+```
+wget https://zenodo.org/records/10471551/files/BlastDB.tar.gz
+tar -zxvf BlastDB.tar.gz
+```
+
+### Download the compressed DeepARG-DB and mobileOG database (DB.tar.gz) from one drive, put it inside the "Assembly_Pipeline" directory and uncompress it
+
+```
+tar -zxvf DB.tar.gz
+```
+
 ## (C). Strain-resolved pathogen detection
 
 # Usage
@@ -53,7 +72,7 @@ nextflow run short-read-pipeline.nf --R1 <absolute/path/to/forward/read/file> --
 rm -r work
 ```
 
-The command line options for this script (short-read-pipeline.nf) are:
+The command line options for this script (**short-read-pipeline.nf**) are:
 
 **--R1**: The absolute path of the fastq file containing forward read sequences
 
@@ -66,5 +85,24 @@ The command line options for this script (short-read-pipeline.nf) are:
 With **--out_fname S1**, output files include: **S1_rpoB_ARG_norm.tsv** and **S1_drug_wise_rpoB_norm.tsv**.
 
 ## (B). De novo assembly to assess potential new pathogen variants and to determine “resistome risk” (i.e., degree to which ARGs have propensity to spread to pathogens)
+
+To run the assembly pipeline on metagenomic paired-end short read data ( * .fastq/ * .fq/ * .fastq.gz/ * .fq.gz), use the following command:
+
+```
+nextflow run assembly_pipeline.nf --R1 <absolute/path/to/forward/read/file> --R2 <absolute/path/to/reverse/read/file> --out_fname <prefix of output file name>
+rm -r work
+```
+
+The command line options for this script (**assembly_pipeline.nf**) are:
+
+**--R1**: The absolute path of the fastq file containing forward read sequences
+
+**--R2**: The absolute path of the fastq file containing reverse read sequences
+
+**--out_fname**: The prefix of the output file name
+
+### Output
+
+With **--out_fname S1**, output files include: **S1_resistome_risk.txt**, **S1_ARGs.faa**, and **S1_ARGs_and_mobility.tsv**.
 
 ## (C). Strain-resolved pathogen detection
