@@ -2,7 +2,7 @@
 
 Path-Explorer is a new suite of user-friendly computational tools that enable reconstruction of co-occurring strains, as well as provide other fundamental analytical capabilities that will enhance metagenomic-based WBS of various pathogen and antimicrobial resistance targets.
 
-<img width="558" alt="new" src="https://github.com/haoqiusong/Path-Explorer/assets/106828678/c8ff02ff-e917-4a92-896d-386fe066bd78" pos="centering">
+<img width="558" alt="new" src="https://github.com/haoqiusong/Path-Explorer/assets/106828678/c8ff02ff-e917-4a92-896d-386fe066bd78" align="center">
 
 # Installation & Usage
 
@@ -14,7 +14,7 @@ Path-Explorer is a new suite of user-friendly computational tools that enable re
 ## Installation
 
 '''bash
-git clone [https](https://github.com/haoqiusong/Path-Explorer.git)
+git clone https://github.com/haoqiusong/Path-Explorer.git
 cd read-pipeline
 bash install.sh
 conda env create -f environment.yml
