@@ -1,0 +1,24 @@
+name: path_explorer
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.10
+  - nextflow
+  - blast
+  - megahit
+  - kraken2
+  - sourmash
+  - minimap2
+  - samtools
+  - bedtools
+  - bcftools
+  - bowtie2
+  - spades
+  - fastq-pair
+  - msweep
+  - bracken
+  - vsearch
+  - pandas
+  - numpy
+  - biopython
