@@ -16,13 +16,28 @@ Path-Explorer is a new suite of user-friendly computational tools that enable re
 ## Installation
 
 ```
-git clone http\:https://github.com/haoqiusong/Path-Explorer.git
-cd read-pipeline
-bash install.sh
+git clone https://github.com/haoqiusong/Path-Explorer.git
 conda env create -f environment.yml
+conda activate path-explorer
 ```
 
 ## (A). Read mapping to quantify pathogen and ARG markers of interest
+
+```
+scp install.sh read_mapping_and_quantification
+cd read_mapping_and_quantification
+bash install.sh
+```
+
+### Download the compressed standard 16 GB kraken2 DB and uncompress it
+
+```
+mkdir k2_DB
+cd k2_DB
+wget https://genome-idx.s3.amazonaws.com/kraken/k2_standard_16gb_20240112.tar.gz
+tar -zxvf k2_standard_16gb_20240112.tar.gz
+rm k2_standard_16gb_20240112.tar.gz
+```
 
 ## (B). De novo assembly to assess potential new pathogen variants and to determine “resistome risk” (i.e., degree to which ARGs have propensity to spread to pathogens)
 
