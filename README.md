@@ -6,14 +6,14 @@ Path-Explorer is a new suite of user-friendly computational tools that enable re
 	<img width="558" alt="new" src="https://github.com/haoqiusong/Path-Explorer/assets/106828678/c8ff02ff-e917-4a92-896d-386fe066bd78">
 </div>
 
-# Installation & Usage
+# Installation
 
 ## Requirements
 
 1. Linux Operating System
 2. Conda
 
-## Installation
+## Environment installation
 
 ```
 git clone https://github.com/haoqiusong/Path-Explorer.git
@@ -38,6 +38,26 @@ wget https://genome-idx.s3.amazonaws.com/kraken/k2_standard_16gb_20240112.tar.gz
 tar -zxvf k2_standard_16gb_20240112.tar.gz
 rm k2_standard_16gb_20240112.tar.gz
 ```
+
+## (B). De novo assembly to assess potential new pathogen variants and to determine “resistome risk” (i.e., degree to which ARGs have propensity to spread to pathogens)
+
+## (C). Strain-resolved pathogen detection
+
+# Usage
+
+## (A). Read mapping to quantify pathogen and ARG markers of interest
+
+To run the assembly pipeline on metagenomic paired-end short read data ( * .fastq/ * .fq/ * .fastq.gz/ * .fq.gz), use the following command:
+```
+nextflow run short-read-pipeline.nf --R1 <absolute/path/to/forward/read/file> --R2 <absolute/path/to/reverse/read/file> --out_fname <prefix of output file name>
+rm -r work
+```
+
+The command line options for this script (short-read-pipeline.nf) are:
+
+**--R1**: The absolute path of the fastq file containing forward read sequences
+**--R2**: The absolute path of the fastq file containing reverse read sequences
+**--out_fname**: The prefix of the output file name
 
 ## (B). De novo assembly to assess potential new pathogen variants and to determine “resistome risk” (i.e., degree to which ARGs have propensity to spread to pathogens)
 
