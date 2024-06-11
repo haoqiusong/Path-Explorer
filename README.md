@@ -56,6 +56,8 @@ tar -zxvf BlastDB.tar.gz
 
 ### Download the compressed DeepARG-DB and mobileOG database (DB.tar.gz) from one drive, put it inside the "Assembly_Pipeline" directory and uncompress it
 
+Use this [link](https://drive.google.com/file/d/10YuSxmre1bIg8V6-oAHjBkMcUWGJUmE4/view?usp=drive_link) to download **DB.tar.gz**. Put it inside the **de_novo_assembly_and_resistome_risk** directory and uncompress it using the following command:
+
 ```
 tar -zxvf DB.tar.gz
 ```
