@@ -56,8 +56,14 @@ rm -r work
 The command line options for this script (short-read-pipeline.nf) are:
 
 **--R1**: The absolute path of the fastq file containing forward read sequences
+
 **--R2**: The absolute path of the fastq file containing reverse read sequences
+
 **--out_fname**: The prefix of the output file name
+
+### Output
+
+With **--out_fname S1**, output files include: **S1_rpoB_ARG_norm.tsv** and **S1_drug_wise_rpoB_norm.tsv**.
 
 ## (B). De novo assembly to assess potential new pathogen variants and to determine “resistome risk” (i.e., degree to which ARGs have propensity to spread to pathogens)
 
