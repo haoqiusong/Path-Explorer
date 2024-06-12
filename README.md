@@ -64,9 +64,13 @@ tar -zxvf DB.tar.gz
 
 ## (C). Strain-resolved pathogen detection
 
-```
-cd strain_resolved_detection_and_recovery
-```
+### Users w/ their own reference genome list
+
+Make sure you have a sequence data ( * .fasta/ * .fa/ * .fasta.gz/ * .fa.gz) containing all your reference genome sequences.
+
+### Users w/o their own reference genome list
+
+TBD...
 
 # Usage
 
@@ -113,7 +117,26 @@ With **--out_fname S1**, output files include: **S1_resistome_risk.txt**, **S1_A
 
 ## (C). Strain-resolved pathogen detection
 
+To run the strain-resolved detection and recovery pipeline on metagenomic paired-end short read data ( * .fastq/ * .fq/ * .fastq.gz/ * .fq.gz), use the following command:
+
+```
+nextflow run strain_detection.nf --R1 <absolute/path/to/forward/read/file> --R2 <absolute/path/to/reverse/read/file> --Ref <absolute/path/to/reference/genome/file> --out_fname <prefix of output file name>
+rm -r work
+```
+
+The command line options for this script (**strain_detection.nf**) are:
+
+**--R1**: The absolute path of the fastq file containing forward read sequences
+
+**--R2**: The absolute path of the fastq file containing reverse read sequences
+
+**--Ref**: The absolute path of the fasta file containing all reference genome sequences
+
+**--out_fname**: The prefix of the output file name
+
 ### Output
+
+With **--out_fname S1**, output files include: **S1_recovered_genomes.fasta**, **S1_relative_abundance.png**, and **S1_genome_recovery_rate.tsv**.
 
 #### Visualization example
 
