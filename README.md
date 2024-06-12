@@ -108,3 +108,10 @@ The command line options for this script (**assembly_pipeline.nf**) are:
 With **--out_fname S1**, output files include: **S1_resistome_risk.txt**, **S1_ARGs.faa**, and **S1_ARGs_and_mobility.tsv**.
 
 ## (C). Strain-resolved pathogen detection
+
+### Visualization example
+
+The relative abundance of different genome targets in different samples is visualized by a heatmap as followed:
+<div align="center">
+	<img width="694" alt="a" src="https://github.com/haoqiusong/Path-Explorer/assets/106828678/6b0f85cc-c0c1-4a44-b294-7bdf668b2b23">
+</div>
