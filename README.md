@@ -64,6 +64,10 @@ tar -zxvf DB.tar.gz
 
 ## (C). Strain-resolved pathogen detection
 
+```
+cd strain_resolved_detection_and_recovery
+```
+
 # Usage
 
 ## (A). Read mapping to quantify pathogen and ARG markers of interest
