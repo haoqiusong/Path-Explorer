@@ -122,5 +122,5 @@ The relative abundance of different genome targets in different samples is visua
 
 The Genome recovery rate for all targets will be given in a table as follows:
 <div align="center">
-	<img width="570" alt="Screen Shot 2024-06-12 at 10 32 43" src="https://github.com/haoqiusong/Path-Explorer/assets/106828678/6882edb1-7f2c-4b34-b86b-7b00f6ed83d8">
+	<img width="516" alt="Screen Shot 2024-06-12 at 10 35 50" src="https://github.com/haoqiusong/Path-Explorer/assets/106828678/65ad7ead-554e-4f69-9975-0df7936aeb57">
 </div>
