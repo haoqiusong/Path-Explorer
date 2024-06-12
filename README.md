@@ -127,7 +127,7 @@ The command line options for this script (**strain_detection.nf**) are:
 
 **--R2**: The absolute path of the fastq file containing reverse read sequences
 
-**--Ref**: The absolute path of the fasta file containing all reference genome sequences
+**--Ref**: The absolute path of the fasta file containing all reference genome sequences (If not provided, a default reference genome list will be used.)
 
 **--out_fname**: The prefix of the output file name
 
