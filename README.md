@@ -109,9 +109,18 @@ With **--out_fname S1**, output files include: **S1_resistome_risk.txt**, **S1_A
 
 ## (C). Strain-resolved pathogen detection
 
-### Visualization example
+### Output
 
-The relative abundance of different genome targets in different samples is visualized by a heatmap as followed:
+#### Visualization example
+
+The relative abundance of different genome targets in different samples is visualized by a heatmap:
 <div align="center">
 	<img width="694" alt="a" src="https://github.com/haoqiusong/Path-Explorer/assets/106828678/6b0f85cc-c0c1-4a44-b294-7bdf668b2b23">
+</div>
+
+#### Genome recovery example
+
+The Genome recovery rate for all targets will be given in a table:
+<div align="center">
+	![image](https://github.com/haoqiusong/Path-Explorer/assets/106828678/3e531c49-35ee-4ba9-b7ed-54f2852bc626)
 </div>
