@@ -8,11 +8,6 @@ Path-Explorer is a new suite of user-friendly computational tools that enable re
 
 # Installation
 
-## Requirements
-
-1. Linux Operating System
-2. Conda
-
 ## Environment installation
 
 ```
@@ -20,6 +15,8 @@ git clone https://github.com/haoqiusong/Path-Explorer.git
 conda env create -f environment.yml
 conda activate path-explorer
 ```
+
+Please make sure you have a Conda installed on your machine.
 
 ## (A). Read mapping to quantify pathogen and ARG markers of interest
 
