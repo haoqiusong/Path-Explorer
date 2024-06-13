@@ -22,3 +22,4 @@ dependencies:
   - pandas
   - numpy
   - biopython
+  - pysam
