@@ -61,6 +61,12 @@ tar -zxvf DB.tar.gz
 
 ## (C). Strain-resolved pathogen detection
 
+```
+scp install.sh strain_resolved_detection_and_recovery
+cd strain_resolved_detection_and_recovery
+bash install.sh
+```
+
 ### Users w/ their own reference genome list
 
 Make sure you have a sequence data ( * .fasta/ * .fa/ * .fasta.gz/ * .fa.gz) containing all your reference genome sequences.
