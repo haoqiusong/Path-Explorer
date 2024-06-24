@@ -140,18 +140,3 @@ The command line options for this script (**strain_detection.nf**) are:
 ### Output
 
 With **--out_fname S1**, output files include: **S1_recovered_genomes.fasta**, **S1_relative_abundance.png**, and **S1_genome_recovery_rate.tsv**.
-/*
-#### Visualization example
-
-The relative abundance of different genome targets in different samples is visualized by a heatmap:
-<div align="center">
-	<img width="694" alt="a" src="https://github.com/haoqiusong/Path-Explorer/assets/106828678/6b0f85cc-c0c1-4a44-b294-7bdf668b2b23">
-</div>
-
-#### Genome recovery example
-
-The Genome recovery rate for all targets will be given in a table as follows:
-<div align="center">
-	<img width="516" alt="Screen Shot 2024-06-12 at 10 35 50" src="https://github.com/haoqiusong/Path-Explorer/assets/106828678/65ad7ead-554e-4f69-9975-0df7936aeb57">
-</div>
-*/
