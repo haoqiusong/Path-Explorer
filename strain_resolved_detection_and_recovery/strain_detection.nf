@@ -197,8 +197,8 @@ process RelativeAbundance {
 
   """
   python3 $projectDir/group.py $filtered_ref
-  ./themisto pseudoalign -q $paired_R1 -o pseudoalignments_1.aln -i themisto_index/index --temp-dir themisto_index/tmp --rc --n-threads 16 --sort-output --gzip-output
-  ./themisto pseudoalign -q $paired_R2 -o pseudoalignments_2.aln -i themisto_index/index --temp-dir themisto_index/tmp --rc --n-threads 16 --sort-output --gzip-output
+  $projectDir/themisto pseudoalign -q $paired_R1 -o pseudoalignments_1.aln -i themisto_index/index --temp-dir themisto_index/tmp --rc --n-threads 16 --sort-output --gzip-output
+  $projectDir/themisto pseudoalign -q $paired_R2 -o pseudoalignments_2.aln -i themisto_index/index --temp-dir themisto_index/tmp --rc --n-threads 16 --sort-output --gzip-output
   mSWEEP --themisto-1 pseudoalignments_1.aln.gz --themisto-2 pseudoalignments_2.aln.gz -o ${params.out_fname} -i reference_grouping.txt
   """
 
