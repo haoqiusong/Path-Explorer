@@ -73,7 +73,7 @@ Make sure you have a sequence data ( * .fasta/ * .fa/ * .fasta.gz/ * .fa.gz) con
 
 ### Users w/o their own reference genome list
 
-TBD...
+A default reference genome list will be used.
 
 # Usage
 
@@ -123,6 +123,9 @@ With **--out_fname S1**, output files include: **S1_resistome_risk.txt**, **S1_A
 To run the strain-resolved detection and recovery pipeline on metagenomic paired-end short read data ( * .fastq/ * .fq/ * .fastq.gz/ * .fq.gz), use the following command:
 
 ```
+mkdir themisto_index
+mkdir themisto_index/index
+mkdir themisto_index/tmp
 nextflow run strain_detection.nf --R1 <absolute/path/to/forward/read/file> --R2 <absolute/path/to/reverse/read/file> --Ref <absolute/path/to/reference/genome/file> --out_fname <prefix of output file name>
 rm -r work
 ```
@@ -143,5 +146,5 @@ With **--out_fname S1**, output files include: **S1_recovered_genomes.fasta**, *
 
 # Citation
 
-If you use Path-Explorer, please cite our work as:
+If you use Path-Explorer, please cite our work:
 TBD...
