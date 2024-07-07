@@ -198,7 +198,7 @@ process RelativeAbundance {
   """
   python3 $projectDir/group.py $filtered_ref reference_grouping.txt
   echo $filtered_ref > ref.txt
-  $projectDir/themisto build -k 31 -i ref.txt --index-prefix R --temp-dir ./ --mem-gigas 2 --n-threads 4 --file-colors
+  $projectDir/themisto build -k 31 -i ref.txt --index-prefix R --temp-dir ./ --n-threads 16
   awk 'BEGIN {OFS="\\n"; empty_seq = "N"; empty_qual = "F"} {header=\$0; getline seq; getline plus; getline qual; if (length(seq) > 0) print header, seq, plus, qual; else print header, empty_seq, plus, empty_qual}' $paired_R1 > R1_filtered.fastq
   awk 'BEGIN {OFS="\\n"; empty_seq = "N"; empty_qual = "F"} {header=\$0; getline seq; getline plus; getline qual; if (length(seq) > 0) print header, seq, plus, qual; else print header, empty_seq, plus, empty_qual}' $paired_R2 > R2_filtered.fastq
   $projectDir/themisto pseudoalign -q R1_filtered.fastq -o pseudoalignments_1.aln -i R --temp-dir ./ --rc --n-threads 16 --sort-output-lines --gzip-output
