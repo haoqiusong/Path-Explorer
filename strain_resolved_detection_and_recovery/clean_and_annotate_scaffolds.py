@@ -28,7 +28,9 @@ def clean_and_annotate_scaffolds(reference, bam_file, output_file):
     recovered_seq_records = []
     for contig, seq_list in recovered_sequences.items():
         recovered_seq = "".join(seq_list)
-        recovered_seq_record = SeqRecord(Seq(recovered_seq), id=contig, description="")
+        # Remove all 'N's from the recovered sequence
+        cleaned_recovered_seq = recovered_seq.replace('N', '')
+        recovered_seq_record = SeqRecord(Seq(cleaned_recovered_seq), id=contig, description="")
         recovered_seq_records.append(recovered_seq_record)
 
     # Write the recovered sequences to a FASTA file
