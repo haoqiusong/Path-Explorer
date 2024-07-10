@@ -123,7 +123,7 @@ With **--out_fname S1**, output files include: **S1_resistome_risk.txt**, **S1_A
 To run the strain-resolved detection and recovery pipeline on metagenomic paired-end short read data ( * .fastq/ * .fq/ * .fastq.gz/ * .fq.gz), use the following command:
 
 ```
-nextflow run strain_detection.nf --R1 <absolute/path/to/forward/read/file> --R2 <absolute/path/to/reverse/read/file> --Ref <absolute/path/to/reference/genome/file> --out_fname <prefix of output file name>
+nextflow run strain_detection.nf --R1 <absolute/path/to/forward/read/file> --R2 <absolute/path/to/reverse/read/file> (--Ref <absolute/path/to/reference/genome/file>) --out_fname <prefix of output file name>
 rm -r work
 ```
 
