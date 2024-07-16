@@ -73,7 +73,7 @@ Make sure you have a sequence data ( * .fasta/ * .fa/ * .fasta.gz/ * .fa.gz) con
 
 ### Users w/o their own reference genome list
 
-A default reference genome list will be used.
+A default list of reference genomes will be used, which contains multiple pathogens at different species and strain level. In this list, three genomes of each ESKAPEE (Enterococcus faecium, Staphylococcus aureus, Klebsiella pneumoniae, Acinetobacgter baumannii, Pseudomonas aeruginosa, Enterobacter spp., and Escherichia coli) pathogens are included. Besides, there are also several viruses including influenza virus (H1N1, H3N2, and H5N1), Norovirus (GI, GII, and GV), Coronavirus (OC43, NL63, 229E, and HKU1), and SARS-CoV-2 strains.
 
 # Usage
 
