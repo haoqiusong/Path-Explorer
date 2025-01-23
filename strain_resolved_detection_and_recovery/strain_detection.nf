@@ -40,7 +40,7 @@ process sourmash {
   sourmash sketch dna $qc_R2 -o read2.sig
   sourmash signature merge read1.sig read2.sig -o merged.sig
   sourmash sketch dna $Ref -o genome.sig --singleton
-  sourmash gather merged.sig genome.sig -o ${params.output_fname}_presence.csv
+  sourmash gather merged.sig genome.sig -o ${params.output_fname}_presence.csv --threshold-bp 100
   """
 
 }
