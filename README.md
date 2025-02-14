@@ -3,7 +3,8 @@
 Path-Explorer is a new suite of user-friendly computational tools that enable reconstruction of co-occurring strains, as well as provide other fundamental analytical capabilities that will enhance metagenomic-based WBS of various pathogen and antimicrobial resistance targets.
 
 <div align="center">
-	<img width="558" alt="new" src="https://github.com/haoqiusong/Path-Explorer/assets/106828678/c8ff02ff-e917-4a92-896d-386fe066bd78">
+	<img width="1006" alt="Screenshot 2025-02-14 at 2 10 03 PM" src="https://github.com/user-attachments/assets/b26ebd44-3433-426b-83dd-7dc7d60a6e47" />
+
 </div>
 
 # Installation
