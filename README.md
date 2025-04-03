@@ -141,8 +141,3 @@ The command line options for this script (**strain_detection.nf**) are:
 ### Output
 
 With **--out_fname S1**, output files include: **S1_recovered_genomes.fasta**, **S1_relative_abundance.png**, and **S1_genome_recovery_rate.tsv**.
-
-# Citation
-
-If you use Path-Explorer, please cite our work:
-TBD...
