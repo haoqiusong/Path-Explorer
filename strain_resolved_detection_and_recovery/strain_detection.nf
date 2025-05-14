@@ -33,14 +33,14 @@ process sourmash {
   path Ref
 
   output:
-  path "${params.output_fname}_presence.csv", emit: presence
+  path "${params.out_fname}_presence.csv", emit: presence
 
   """
   sourmash sketch dna $qc_R1 -o read1.sig
   sourmash sketch dna $qc_R2 -o read2.sig
   sourmash signature merge read1.sig read2.sig -o merged.sig
   sourmash sketch dna $Ref -o genome.sig --singleton
-  sourmash gather merged.sig genome.sig -o ${params.output_fname}_presence.csv --threshold-bp 100
+  sourmash gather merged.sig genome.sig -o ${params.out_fname}_presence.csv --threshold-bp 100
   """
 
 }
@@ -58,7 +58,8 @@ process FilterReferences {
 
   script:
   """
-  python3 $projectDir/filter_references.py $presence $Ref ${params.out_fname}_filtered_ref.fasta
+  python3 $projectDir/filter_references.py $presence $Ref temp_filtered_ref.fasta
+  python3 $projectDir/clean_fasta.py temp_filtered_ref.fasta ${params.out_fname}_filtered_ref.fasta
   """
 }
 
